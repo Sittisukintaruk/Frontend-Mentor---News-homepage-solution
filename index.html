@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body" class="relative font-sans">
+    <main
+      class="mx-auto mt-5 max-w-[calc(100%_-_2rem)] sm:mt-[90px] sm:max-w-[1112px]"
+    >
+      <header>
+        <nav class="flex items-center justify-between">
+          <a href=""><img src="./imgs/logo.svg" alt="logo" /></a>
+          <div>
+            <ul
+              class="hidden text-[15px] leading-tight tracking-[0.04em] text-Neutral/VeryDarkBlue sm:flex sm:gap-[38px]"
+            >
+              <li><a class="hover:text-primary/SoftRed" href="">Home</a></li>
+              <li><a class="hover:text-primary/SoftRed" href="">New</a></li>
+              <li><a class="hover:text-primary/SoftRed" href="">Popular</a></li>
+              <li>
+                <a class="hover:text-primary/SoftRed" href="">Treanding</a>
+              </li>
+              <li>
+                <a class="hover:text-primary/SoftRed" href="">Categories</a>
+              </li>
+            </ul>
+            <img
+              class="h-full cursor-pointer sm:hidden"
+              src="./imgs/icon-menu.svg"
+              alt="menu"
+              id="open"
+            />
+          </div>
+        </nav>
+      </header>
+      <div class="mt-5 sm:mt-[54px] sm:flex sm:gap-7">
+        <div
+          class="flex flex-col items-center sm:flex-[2] sm:items-start sm:justify-between"
+        >
+          <div>
+            <img
+              class="sm:hidden"
+              src="./imgs/image-web-3-mobile.jpg"
+              alt="mobile-3"
+            />
+            <img
+              class="hidden sm:block"
+              src="./imgs/image-web-3-desktop.jpg"
+              alt="desktop-3"
+            />
+          </div>
+          <div class="mt-6 sm:mt-8 sm:flex">
+            <h1
+              class="text-[40px] font-extrabold leading-none sm:flex-1 sm:text-[56px]"
+            >
+              The Bright Future of Web 3.0?
+            </h1>
+            <div
+              class="mt-4 sm:mt-0 sm:flex sm:flex-1 sm:flex-col sm:items-start sm:justify-between"
+            >
+              <p
+                class="text-[15px] leading-6 tracking-wide text-Neutral/Darkgrayishblue"
+              >
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <a
+                class="mt-7 inline-block bg-primary/Red px-[33px] py-[14px] text-[15px] font-bold tracking-[0.24em] text-Neutral/Off_white hover:bg-Neutral/VeryDarkBlue sm:mt-0"
+                href=""
+                >READ MORE</a
+              >
+            </div>
+          </div>
+        </div>
+        <aside
+          class="mt-16 bg-Neutral/VeryDarkBlue text-Neutral/Off_white sm:mt-0 sm:flex-1"
+        >
+          <div class="px-5 pt-8 pb-8">
+            <h2 class="text-4xl font-extrabold text-primary/SoftRed">New</h2>
+            <div class="flex flex-col gap-4">
+              <div
+                class="flex flex-col gap-2 border-b border-b-Neutral/Darkgrayishblue py-8"
+              >
+                <h4
+                  class="cursor-pointer text-xl font-bold tracking-wide text-Neutral/Off_white hover:text-primary/SoftRed"
+                >
+                  Hydrogen VS Electric Cars
+                </h4>
+                <p class="text-[15px] tracking-wider text-Neutral/Grayish_blue">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </div>
+              <div
+                class="flex flex-col gap-2 border-b border-b-Neutral/Darkgrayishblue py-8 sm:py-0 sm:pt-4 sm:pb-8"
+              >
+                <h4
+                  class="cursor-pointer text-xl font-bold tracking-wide text-Neutral/Off_white hover:text-primary/SoftRed"
+                >
+                  The Downsides of AI Artistry
+                </h4>
+                <p class="text-[15px] tracking-wider text-Neutral/Grayish_blue">
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </div>
+              <div class="flex flex-col gap-2 pt-8 sm:pt-4">
+                <h4
+                  class="cursor-pointer text-xl font-bold tracking-wide text-Neutral/Off_white hover:text-primary/SoftRed"
+                >
+                  Is VC Funding Drying Up?
+                </h4>
+                <p class="text-[15px] tracking-wider text-Neutral/Grayish_blue">
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <div class="mt-16 grid auto-rows-[130px] gap-8 pb-[80px] sm:grid-cols-3">
+        <div class="flex gap-6">
+          <img class="flex-1" src="./imgs/image-retro-pcs.jpg" alt="" />
+          <div class="flex flex-[2] flex-col justify-between">
+            <h3
+              class="text-[32px] font-bold leading-8 text-Neutral/Grayish_blue"
+            >
+              01
+            </h3>
+            <h4
+              class="mt-3 cursor-pointer text-[18px] font-bold leading-6 hover:text-primary/SoftRed"
+            >
+              Reviving Retro PCs
+            </h4>
+            <p
+              class="mt-2 text-[15px] leading-[26px] text-Neutral/Darkgrayishblue"
+            >
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-6">
+          <img class="flex-1" src="./imgs/image-top-laptops.jpg" alt="" />
+          <div class="flex flex-[2] flex-col justify-between">
+            <h3
+              class="text-[32px] font-bold leading-8 text-Neutral/Grayish_blue"
+            >
+              02
+            </h3>
+            <h4
+              class="mt-3 cursor-pointer text-[18px] font-bold leading-6 hover:text-primary/SoftRed"
+            >
+              Top 10 Laptops of 2022
+            </h4>
+            <p
+              class="mt-2 text-[15px] leading-[26px] text-Neutral/Darkgrayishblue"
+            >
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-6">
+          <img class="flex-1" src="./imgs/image-gaming-growth.jpg" alt="" />
+          <div class="flex flex-[2] flex-col justify-between">
+            <h3
+              class="text-[32px] font-bold leading-8 text-Neutral/Grayish_blue"
+            >
+              03
+            </h3>
+            <h4
+              class="hover:text-primary/SoftRedmt-3 cursor-pointer text-[18px] font-bold leading-6 hover:text-primary/SoftRed"
+            >
+              The Growth of Gaming
+            </h4>
+            <p
+              class="mt-2 text-[15px] leading-[26px] text-Neutral/Darkgrayishblue"
+            >
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div>
+      <div
+        aria-expanded="false"
+        id="menu"
+        class="fixed top-0 right-0 z-50 hidden h-screen w-3/4 bg-Neutral/Off_white"
+      >
+        <div>
+          <div class="relative z-10 mx-6 pt-8">
+            <img
+              src="./imgs/icon-menu-close.svg"
+              class="ml-auto cursor-pointer"
+              alt="close"
+              id="close"
+            />
+            <ul
+              class="mt-10 flex flex-col gap-6 text-[18px] font-bold text-Neutral/VeryDarkBlue"
+            >
+              <li><a class="hover:text-primary/SoftRed" href="">Home</a></li>
+              <li><a class="hover:text-primary/SoftRed" href="">New</a></li>
+              <li><a class="hover:text-primary/SoftRed" href="">Popular</a></li>
+              <li>
+                <a class="hover:text-primary/SoftRed" href="">Treanding</a>
+              </li>
+              <li>
+                <a class="hover:text-primary/SoftRed" href="">Categories</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        id="overlay"
+        class="fixed top-0 left-0 z-10 hidden h-screen w-full bg-Neutral/VeryDarkBlue opacity-40"
+      ></div>
+    </div>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
